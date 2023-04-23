@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Sara's Lunch</title>
+    <title>美味點亮記憶</title>
     <link rel="stylesheet" href="./stylesheets/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,45 +20,41 @@
         .object-fit-cover{
           object-fit: cover;
         }
-        a{
+        a {
          text-decoration: none;
         }
     </style>
 </head>
 <body>
-
-  <div class="main-navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;">Sara's Lunch</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContentp" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">首頁</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="meals.html">餐點</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="drinks.html">飲品</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="sweets.html">甜點</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="gift.html">挑禮物</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="payment.html">線上預約</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
- </div>
+    <div class="layout">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> Sara's Lunch</a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">餐點</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">飲品</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">甜點</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">會員禮</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">挑禮物</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
 
     <header class="header px-4 py-5 d-flex align-items-lg-center justify-content-center" style="background-image: url(https://images.unsplash.com/photo-1525596201491-f6eae338a205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);">
       <div class="title text-white text-center d-flex align-items-center">
@@ -75,13 +71,13 @@
 
     <section class="container my-5">
       <div class="row flex-row-reverse d-flex justify-content-center">
-        <div class="col-lg-4 col-sm-6 d-flex align-items-center">
+        <div class="col-lg-6 d-flex align-items-center">
           <div>
             <h2 class="fw-bold">春日好滋味</h2>
             <p class="lh-lg text-dark fs-4">以淡粉色的大福皮包入卡士達與草莓奶餡，還有草莓巧克力碎塊增添口感。最上頭則是放上了一整顆的新鮮草莓，美美的夢幻配色加上入口Q軟的口感，春天可不能錯過。</p>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-6">
           <img src="https://www.starbucks.com.tw/common/objects/images/cake/20230117122726652.jpg" class="w-100 rounded-circle">
         </div>
       </div>
@@ -155,9 +151,7 @@
               <li class="list-group-item ps-5"><i class="bi bi-check2-circle text-success position-absolute start-0 ms-3"></i>完美派對小幫手</li>
             </ul>
             <div class="card-body">
-              <button type="button" class="btn btn-outline-success w-100 stretched-link">
-                <a href="payment.html" class="">開始體驗</a>
-              </button>
+              <button type="button" class="btn btn-outline-success w-100 stretched-link">開始體驗</button>
             </div>
           </div>
         </div>
@@ -179,9 +173,7 @@
               </li>
             </ul>
             <div class="card-body d-flex">
-              <button type="button" class="btn btn-outline-success w-100 align-self-end stretched-link">
-                <a href="QA.html">開始預約</a>
-              </button>
+              <button type="button" class="btn btn-outline-success w-100 align-self-end stretched-link">開始預約</button>
             </div>
           </div>
         </div>
@@ -193,12 +185,10 @@
         <div class="row gx-5">
           <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 col-sm-8 col-10">
             <div class="div">
-              <a class="fs-2 text-dark" href="home.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> 
-                Sara's Lunch
-              </a>
-              <p>用心為您準備每一份餐點，快速傳遞新鮮與美味。</p>
+              <a class="fs-2 text-dark" href="#"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> Sara's Lunch</a>
             </div>
             
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum harum quam modi dolorum reiciendis maxime, nemo veniam dolores cumque quo.</p>
             <ul class="list-unstyled d-flex">
               <li>
                 <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-facebook"></i></a>
@@ -214,7 +204,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-3 col-12">
+          <div class="d-block d-lg-none"></div>
+          <div class="col-lg-2 col-md-3 col-6">
             <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">會員禮</h4>
             <ul class="list-unstyled ps-2">
               <li class="pb-1">
@@ -225,29 +216,29 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-3 col-12">
+          <div class="col-lg-2 col-md-3 col-6">
             <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">挑禮物</h4>
             <ul class="list-unstyled ps-2">
               <li class="pb-1">
-                <a href="gift.html" class="link-secondary">餐券禮讚</a>
+                <a href="#" class="link-secondary">餐券禮讚</a>
               </li>
               <li class="pb-1">
-                <a href="meals.html" class="link-secondary">線上購物</a>
+                <a href="#" class="link-secondary">線上購物</a>
               </li>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-3 col-12">
+          <div class="col-lg-2 col-md-3 col-6">
             <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">聯絡我們</h4>
             <ul class="list-unstyled ps-2">
               <li class="pb-1">
-                <a href="payment.html" class="link-secondary">開始預訂</a>
+                <a href="#" class="link-secondary">我有新點子</a>
               </li>
               <li class="pb-1">
-                <a href="QA.html" class="link-secondary">常見問題</a>
+                <a href="#" class="link-secondary">顧客回饋</a>
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-3 col-12">
+          <div class="col-lg-3 col-md-3 col-6">
             <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">收藏餐廳</h4>
             <form>
               <input class="form-control mb-1" type="text" placeholder="Your Email"/>
@@ -257,7 +248,7 @@
         </div>
       </div>
       <div class="text-center mt-5">
-        <p class="text-muted small m-0">© 2023 Sara's Lunch. All rights reserved.</p>
+        <p class="text-muted small m-0">© 2023 2023 Sara's Lunch. All rights reserved</p>
       </div>
     </footer>
 
