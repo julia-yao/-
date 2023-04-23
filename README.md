@@ -1,1 +1,1 @@
-# shpoping
+# shopping
