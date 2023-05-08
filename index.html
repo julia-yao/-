@@ -23,165 +23,126 @@
         a{
          text-decoration: none;
         }
+        .divider-separator{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        color: #dca000;
+        }
+        .divider-separator-text {
+        margin-left: 42%;
+        }
+        .bg-cover{
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .middle{
+          transition: .5s ease;
+          opacity: 0.5;
+          background-color: black;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0%;
+          left: 0%;
+        }
+        .middle2{
+          height: auto;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+
+        }
+
     </style>
 </head>
 <body>
 
-  <div class="main-navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="main-navbar" style="background-image: url(https://images.unsplash.com/photo-1525596201491-f6eae338a205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light" id="navbar-top">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;">Sara's Lunch</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContentp" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="home.html">首頁</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="meals.html">餐點</a>
+                <a class="nav-link" href="meals.html">菜單</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="drinks.html">飲品</a>
+                <a class="nav-link" href="payment.html">聯絡我們</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="sweets.html">甜點</a>
+                <a class="nav-link" href="">
+                  <i class="bi bi-suit-heart fs-4 fw-bolder"></i>
+                </a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="gift.html">挑禮物</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="payment.html">線上預約</a>
+                <a class="nav-link" href="">
+                  <i class="bi bi-cart fs-4 fw-bolder"></i>
+                </a>
+                
               </li>
             </ul>
           </div>
         </div>
     </nav>
- </div>
-
-    <header class="header px-4 py-5 d-flex align-items-lg-center justify-content-center" style="background-image: url(https://images.unsplash.com/photo-1525596201491-f6eae338a205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);">
+    <header class="header px-4 py-5 d-flex align-items-lg-center justify-content-center">
       <div class="title text-white text-center d-flex align-items-center">
         <div class="bg-dark-gradint p-2 p-lg-5">
-            <p class="fs-4">假日睡到中午</p>
             <h1 class="fw-bold fs-1">來份幸福早午餐</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              Placeat saepe impedit corrupti architecto quasi nisi <br>
+              用心為您準備每一份餐點，<br>
+              快速傳遞新鮮與美味。  <br>
             </p>
         </div>
       </div>
     </header>
+ </div>
 
-    <section class="container my-5">
+    <section class="container m-7" style="height: 400px;">
       <div class="row flex-row-reverse d-flex justify-content-center">
-        <div class="col-lg-4 col-sm-6 d-flex align-items-center">
+        <div class="col-lg-4 col-sm-6 align-items-center">
           <div>
-            <h2 class="fw-bold">春日好滋味</h2>
-            <p class="lh-lg text-dark fs-4">以淡粉色的大福皮包入卡士達與草莓奶餡，還有草莓巧克力碎塊增添口感。最上頭則是放上了一整顆的新鮮草莓，美美的夢幻配色加上入口Q軟的口感，春天可不能錯過。</p>
+            <span class="divider-separator mb-3">
+              <span class="divider-separator-text">FEATURED PRODUCTS</span>
+            </span>
+            <h2 class="fw-bold">美式培根早午餐</h2>
+            <p class="lh-lg text-dark fs-4">新鮮現打蓬鬆舒芙蕾，一口滑嫩美式炒蛋加上培根及新鮮蔬菜，經典菜餚不能錯過。</p>
+            <a href="" class="btn btn-primary">開始訂購</a>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <img src="https://www.starbucks.com.tw/common/objects/images/cake/20230117122726652.jpg" class="w-100 rounded-circle">
+          <img src="https://sarabethsrestaurants.jp/_img/page/menu/07.jpg" class="w-100">
         </div>
       </div>
     </section>
 
-    <section class="py-5" style="background-image:url(https://www.crazybackground.com/wp-content/uploads/2019/12/vector-honeycomb-white-background.jpg);">
+    <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">
-          美味的密訣
-        </h2>
-        <div class="row row-cols-1 row-cols-lg-3 g-3 g-lg-4">
-          <div class="col">
-            <div class="card border-0 shadow h-100">
-              <img src="https://images.unsplash.com/photo-1617884638394-d9eef1b0f40e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2FsYWR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" class="card-img h-100">
-              <div class="card-img-overlay text-center py-4 top-auto bg-dark-gradint text-light">
-                <i class="bi bi-lightning fs-s-48"></i>
-                <h3>新鮮</h3>
-                <p class="">
-                  好的食材自己會說話，美好滋味就該從講究食材開始。
-                  為了最美味的佳餚，我們堅持品質，只為了讓你安心享用、每一口都吃得到真材實料！
-                </p>
-              </div>
+        <div class="row">
+          <div class="col-md-3 container nopadding position-elative">
+            <div class="middle2">
+              <span class="font2">Tokyo</span>
+              <span class="font1">東京店</span>
             </div>
+            <a href=""><div class="middle"></div></a>
+            <img class="img-fluid" src="https://sarabethsrestaurants.jp/_img/top/shop/tokyo.jpg" alt="">
           </div>
-          <div class="col">
-            <div class="card border-0 shadow h-100">
-              <img src="https://images.unsplash.com/photo-1567168476342-a8a14c1eff16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHN0cmF3YmVycnklMjBjYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="card-img h-100 object-fit-cover">
-              <div class="card-img-overlay text-center py-4 top-auto bg-dark-gradint text-light">
-                <i class="bi bi-bookmark-star fs-s-48"></i>
-                <h3>精選</h3>
-                <p class="">
-                  以濃郁滑順的香草布蕾內餡為主體與香酥塔皮的結合。一口咬下，口腔滿溢著濃醇的蛋香與奶油餅乾香氣。
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 shadow h-100">
-              <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="card-img h-100">
-              <div class="card-img-overlay text-center py-4 top-auto bg-dark-gradint text-light">
-                <i class="bi bi-droplet-half fs-s-48"></i>
-                <h3>綠色永續</h3>
-                <p class="">
-                  選用100%通過雨林聯盟認證的優質阿拉比卡咖啡豆，支持雨林生態永續發展<br/>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 container">
-      <h2 class="text-center mb-4">客製化服務</h2>
-      <div class="row row-cols-1 row-cols-lg-2">
-        <div class="col">
-          <div class="card border-0 shadow h-100 rounded-3">
-            <div class="card-header border border-1 bg-success text-center text-light">
-              派對餐點
-            </div>
-            <div class="card-body text-center">
-              <img src="https://www.svgrepo.com/show/187690/magic-wand-wizard.svg" style="width: 100px;" alt="">
-              <div class="text-success mt-3">
-                NT. <strong class="fs-2">600</strong> /份
-              </div>
-            </div>
-            <ul class="list-group list-group-flush border-top border-bottom">
-              <li class="list-group-item ps-5"><i class="bi bi-check2-circle text-success position-absolute start-0 ms-3"></i>午宴菜單規劃</li>
-              <li class="list-group-item ps-5"><i class="bi bi-check2-circle text-success position-absolute start-0 ms-3"></i>下午茶甜點尺寸</li>
-              <li class="list-group-item ps-5"><i class="bi bi-check2-circle text-success position-absolute start-0 ms-3"></i>食材與料理方案</li>
-              <li class="list-group-item ps-5"><i class="bi bi-check2-circle text-success position-absolute start-0 ms-3"></i>完美派對小幫手</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-outline-success w-100 stretched-link">
-                <a href="payment.html" class="">開始體驗</a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-0 shadow h-100 rounded-3">
-            <div class="card-header border border-0 bg-success text-center text-light">
-              節日蛋糕
-            </div>
-            <div class="card-body text-center flex-grow-0">
-              <img src="https://www.svgrepo.com/show/187701/halloween-date.svg" style="width: 100px;" alt="">
-              <div class="text-success mt-3">
-                <strong class="fs-4 my-3">訂製詢價</strong>
-              </div>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item ps-5">
-                <i class="bi bi-check2-circle text-success position-absolute start-0 ms-3"></i>
-                選擇喜歡蛋糕口味，還有完美的裝飾，為你準備獨一無二的驚喜！
-              </li>
-            </ul>
-            <div class="card-body d-flex">
-              <button type="button" class="btn btn-outline-success w-100 align-self-end stretched-link">
-                <a href="QA.html">開始預約</a>
-              </button>
+          <div class="col-6">
+            <a href=""></a>
+            <div class="bg-cover" style="background-image: url(https://sarabethsrestaurants.jp/_img/page/menu/09.jpg);height: 300px;"></div>
+            <div class=" text-center fw-bold position-absolute text-">
+              <h4>BREAKFAST＆SALAD</br>
+                早午餐沙拉</h4> 
             </div>
           </div>
         </div>
