@@ -14,14 +14,15 @@
         body{
          font-family: 'Noto Sans TC', sans-serif;
         }
-        a{
-         text-decoration: none;
+        .card{
+          max-width: 300px;
+          height: 300px;
+          overflow: hidden;
         }
-        .carousel img{
-          min-height: 500px;
-          max-height: 600px;
+        .card img{
+          width: 100%;
+          height: 100%;
           object-fit: cover;
-         
         }
         
     </style>
@@ -80,18 +81,18 @@
             <div id="list-example" class="list-group">
               <a class="list-group-item list-group-item-action" href="#list-item-bs">早午餐沙拉 BREAKFAST＆SALADS</a>
               <a class="list-group-item list-group-item-action" href="#list-item-b">漢堡 BURGER</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-fc">蛋糕吐司 FRENCH TOAST＆CAKE</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-fc">法式吐司蛋糕 FRENCH TOAST＆CAKE</a>
               <a class="list-group-item list-group-item-action" href="#list-item-ct">咖啡茶飲 COFFEE＆TEA</a>
               <a class="list-group-item list-group-item-action" href="#list-item-js">果汁氣泡 JUICE＆SODA</a>
             </div>
           </div>
         </div>
-        <div class="col-md-9" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <div class="col-md-9 d-flex flex-wrap" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
           <div >
             <div class="row" id="list-item-bs">
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/07.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/07.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">德國培根早午餐</h5>
@@ -104,7 +105,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/08.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/08.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">香烤雞腿早午餐</h5>
@@ -117,7 +118,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/11.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/11.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">煙燻鮭魚早午餐</h5>
@@ -130,7 +131,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/10.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/10.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">經典早午餐</h5>
@@ -143,7 +144,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/22.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/22.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">植物肉丸沙拉</h5>
@@ -156,7 +157,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/23.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/23.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">香煎雞肉沙拉</h5>
@@ -169,7 +170,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/24.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/24.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">堅果藜麥沙拉</h5>
@@ -182,7 +183,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3" id="list-item-b">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/19.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/19.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">手打牛肉漢堡</h5>
@@ -195,7 +196,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/18.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/18.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">經典培根漢堡</h5>
@@ -210,7 +211,7 @@
             <div class="row" id="list-item-fc">
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/03.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/03.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">蜂蜜鮮奶油法式吐司</h5>
@@ -223,7 +224,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/02.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/02.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">草莓鮮奶油法式吐司</h5>
@@ -236,7 +237,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/06.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/06.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">肉桂焦糖法式吐司</h5>
@@ -249,7 +250,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/01.jpg" class="card-img-top" alt="...">
+                  <img src="https://sarabethsrestaurants.jp/_img/page/menu/01.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">草莓香蕉奶昔</h5>
@@ -262,7 +263,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://media.istockphoto.com/id/183810746/photo/chocolate-cake-with-melted-chocolate-on-top.jpg?s=612x612&w=0&k=20&c=d3lmoP5i4c0dYaY9rh5mnJBiR8_FmBTJ2ueU01TH5nQ=" class="card-img-top" alt="...">
+                  <img src="https://media.istockphoto.com/id/183810746/photo/chocolate-cake-with-melted-chocolate-on-top.jpg?s=612x612&w=0&k=20&c=d3lmoP5i4c0dYaY9rh5mnJBiR8_FmBTJ2ueU01TH5nQ=" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">布朗尼蛋糕</h5>
@@ -275,7 +276,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20221116133048.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20221116133048.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">海鹽起司蛋糕</h5>
@@ -288,7 +289,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20130625125049.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20130625125049.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">重乳起司蛋糕</h5>
@@ -303,7 +304,7 @@
             <div class="row" id="list-item-ct">
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20111201203447.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20111201203447.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">可可拿鐵</h5>
@@ -316,7 +317,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20230329113848.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20230329113848.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">蜂蜜歐雷</h5>
@@ -329,7 +330,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20120509141245.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20120509141245.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">美式咖啡</h5>
@@ -342,7 +343,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20111201203140.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20111201203140.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">紅茶</h5>
@@ -355,7 +356,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20111201202302.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20111201202302.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">美式拿鐵</h5>
@@ -368,7 +369,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20111201201102.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20111201201102.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">重烘焙義式咖啡</h5>
@@ -381,7 +382,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20230329112625.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20230329112625.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">蜂蜜柚子冰拿鐵</h5>
@@ -394,7 +395,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm" id="list-item-js">
-                  <img src="https://www.doutor.co.jp/product/file/20200618185939.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20200618185939.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">檸檬海鹽蘇打</h5>
@@ -407,7 +408,7 @@
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20210706182407.jpg" class="card-img-top" alt="...">
+                  <img src="https://www.doutor.co.jp/product/file/20210706182407.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
                     <div class="">
                       <h5 class="card-text">鮮榨柳橙汁</h5>
@@ -425,78 +426,7 @@
     </div>
   </section>
 
-  <footer class="py-5 bg-light">
-    <div class="container border-bottom">
-      <div class="row gx-5">
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 col-sm-8 col-10">
-          <div class="div">
-            <a class="fs-2 text-dark" href="home.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> 
-              Sara's Lunch
-            </a>
-            <p>用心為您準備每一份餐點，快速傳遞新鮮與美味。</p>
-          </div>
-          
-          <ul class="list-unstyled d-flex">
-            <li>
-              <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-facebook"></i></a>
-            </li>
-            <li>
-              <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-instagram"></i></a>
-            </li>
-            <li>
-              <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-twitter"></i></a>
-            </li>
-            <li>
-              <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-3 col-12">
-          <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">會員禮</h4>
-          <ul class="list-unstyled ps-2">
-            <li class="pb-1">
-              <a href="#" class="link-secondary">成為會員</a>
-            </li>
-            <li class="pb-1">
-              <a href="#" class="link-secondary">會員累積計畫</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-3 col-12">
-          <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">挑禮物</h4>
-          <ul class="list-unstyled ps-2">
-            <li class="pb-1">
-              <a href="gift.html" class="link-secondary">餐券禮讚</a>
-            </li>
-            <li class="pb-1">
-              <a href="#" class="link-secondary">線上購物</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-3 col-12">
-          <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">聯絡我們</h4>
-          <ul class="list-unstyled ps-2">
-            <li class="pb-1">
-              <a href="payment.html" class="link-secondary">開始預訂</a>
-            </li>
-            <li class="pb-1">
-              <a href="QA.html" class="link-secondary">常見問題</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-3 col-12">
-          <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">收藏餐廳</h4>
-          <form>
-            <input class="form-control mb-1" type="text" placeholder="Your Email"/>
-            <button class="btn btn-success w-100" type="submit">寄出邀請</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-5">
-      <p class="text-muted small m-0">© 2023 Sara's Lunch. All rights reserved.</p>
-    </div>
-  </footer>
+  
     
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>

@@ -6,222 +6,209 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Sara's Lunch</title>
     <link rel="stylesheet" href="./stylesheets/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
+      
         body{
          font-family: 'Noto Sans TC', sans-serif;
         }
-        .bg-dark-gradint{
-         background-image: linear-gradient(180deg,rgba(250, 249, 249, 0.138),rgba(0, 0, 0, 0.6));
-        }
-        .object-fit-cover{
-          object-fit: cover;
-        }
-        a{
-         text-decoration: none;
-        }
-        .divider-separator{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 300px;
-        color: #dca000;
-        }
-        .divider-separator-text {
-        margin-left: 42%;
-        }
-        .bg-cover{
+        .header{
+          max-height: 600px;
           background-size: cover;
-          background-repeat: no-repeat;
+          background-position: bottom;
+          position: relative;
         }
-        .middle{
-          transition: .5s ease;
-          opacity: 0.5;
-          background-color: black;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0%;
-          left: 0%;
+        .header img{
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-        .middle2{
-          height: auto;
-          width: 100%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-
+        .header-bg-dark{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,.5);           
         }
-
+        .banner-txt{
+            position: absolute;
+            font-family:"BernhardScriptW01-Light";
+            font-style: normal;
+        }
     </style>
 </head>
 <body>
-
-  <div class="main-navbar" style="background-image: url(https://images.unsplash.com/photo-1525596201491-f6eae338a205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);">
-    <nav class="navbar navbar-expand-lg fixed-top bg-light" id="navbar-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;">Sara's Lunch</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContentp" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">首頁</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="meals.html">菜單</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="payment.html">聯絡我們</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="">
-                  <i class="bi bi-suit-heart fs-4 fw-bolder"></i>
-                </a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="">
-                  <i class="bi bi-cart fs-4 fw-bolder"></i>
-                </a>
-                
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    <header class="header px-4 py-5 d-flex align-items-lg-center justify-content-center">
-      <div class="title text-white text-center d-flex align-items-center">
-        <div class="bg-dark-gradint p-2 p-lg-5">
-            <h1 class="fw-bold fs-1">來份幸福早午餐</h1>
-            <p>
-              用心為您準備每一份餐點，<br>
-              快速傳遞新鮮與美味。  <br>
-            </p>
-        </div>
-      </div>
-    </header>
- </div>
-
-    <section class="container m-7" style="height: 400px;">
-      <div class="row flex-row-reverse d-flex justify-content-center">
-        <div class="col-lg-4 col-sm-6 align-items-center">
-          <div>
-            <span class="divider-separator mb-3">
-              <span class="divider-separator-text">FEATURED PRODUCTS</span>
-            </span>
-            <h2 class="fw-bold">美式培根早午餐</h2>
-            <p class="lh-lg text-dark fs-4">新鮮現打蓬鬆舒芙蕾，一口滑嫩美式炒蛋加上培根及新鮮蔬菜，經典菜餚不能錯過。</p>
-            <a href="" class="btn btn-primary">開始訂購</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <img src="https://sarabethsrestaurants.jp/_img/page/menu/07.jpg" class="w-100">
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 container nopadding position-elative">
-            <div class="middle2">
-              <span class="font2">Tokyo</span>
-              <span class="font1">東京店</span>
-            </div>
-            <a href=""><div class="middle"></div></a>
-            <img class="img-fluid" src="https://sarabethsrestaurants.jp/_img/top/shop/tokyo.jpg" alt="">
-          </div>
-          <div class="col-6">
-            <a href=""></a>
-            <div class="bg-cover" style="background-image: url(https://sarabethsrestaurants.jp/_img/page/menu/09.jpg);height: 300px;"></div>
-            <div class=" text-center fw-bold position-absolute text-">
-              <h4>BREAKFAST＆SALAD</br>
-                早午餐沙拉</h4> 
+  <div>
+    <div class="header-banner">
+      <nav class="navbar navbar-expand-lg fixed-top bg-light" id="navbar-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;">Sara's Lunch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContentp" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">首頁</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="meals.html">菜單</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="payment.html">聯絡我們</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="">
+                    <i class="bi bi-suit-heart fs-4 fw-bolder"></i>
+                  </a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="">
+                    <i class="bi bi-cart fs-4 fw-bolder"></i>
+                  </a>
+                  
+                </li>
+              </ul>
             </div>
           </div>
+      </nav>
+      <header class="header" style="background-image: url(https://images.unsplash.com/photo-1525596201491-f6eae338a205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80);">
+        <div class="header-bg-dark"></div>
+        <div class="h-100 d-flex justify-content-center align-items-center">
+          <div class="banner-txt text-center text-light">
+              <h1 class="fw-bold fs-1">FRESHｘSWEET</h1>
+              <p>
+                用心準備餐點，分享新鮮美味
+              </p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <footer class="py-5 bg-light">
-      <div class="container border-bottom">
-        <div class="row gx-5">
-          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 col-sm-8 col-10">
-            <div class="div">
-              <a class="fs-2 text-dark" href="home.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> 
-                Sara's Lunch
+      </header>
+    </div>
+  
+    <main>
+      <section class="container mt-5 py-5" >
+        <div class="row flex-row-reverse d-flex justify-content-center">
+          <div class="col-lg-4 col-sm-6 align-items-center">
+            <div>
+              <span class="divider-separator mb-3">
+                <span class="divider-separator-text">FEATURED PRODUCTS</span>
+              </span>
+              <h4 class="fw-bold">美式培根早午餐</h2>
+              <p class="lh-lg text-dark fs-5">新鮮現打蓬鬆舒芙蕾，一口滑嫩美式炒蛋加上培根及新鮮蔬菜，經典菜餚不能錯過。</p>
+              <a href="" class="btn btn-primary">開始訂購</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <img src="https://sarabethsrestaurants.jp/_img/page/menu/07.jpg" class="w-100">
+          </div>
+        </div>
+      </section>
+      <section class="container py-5">
+        <div class="container-mask row">
+          <div class="col-6 col-lg-3 g-0 item">
+              <a href="meals.html">
+                <img src="https://sarabethsrestaurants.jp/_img/page/menu/10.jpg" alt="經典早午餐">
+                <div class="mask"></div>
+                <div class="txt">
+                    <h4 class="font-family">BREAKFAST＆SALAD</br>
+                        早午餐沙拉
+                    </h4> 
+                </div>
               </a>
-              <p>用心為您準備每一份餐點，快速傳遞新鮮與美味。</p>
+          </div>
+  
+          <div class="col-6 col-lg-3 g-0 item">
+              <img src="https://sarabethsrestaurants.jp/_img/page/menu/02.jpg" alt="草莓鮮奶油法式吐司">
+              <div class="mask"></div>
+              <div class="txt">
+                  <h4 class="font-family">FRENCH TOAST＆CAKE</br>
+                    法式吐司蛋糕
+                  </h4> 
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 g-0 item">
+              <img src="https://www.doutor.co.jp/product/file/20230329113848.jpg" alt="蜂蜜歐雷">
+              <div class="mask"></div>
+              <div class="txt">
+                  <h4 class="font-family">COFFEE＆TEA</br>
+                    咖啡茶飲 
+                  </h4> 
+              </div>
+          </div>
+          <div class="col-6 col-lg-3 g-0 item">
+              <img src="https://www.doutor.co.jp/product/file/20200618185939.jpg" alt="">
+              <div class="mask"></div>
+              <div class="txt">
+                  <h4 class="font-family">JUICE＆SODA</br>
+                    果汁氣泡 
+                  </h4> 
+              </div>
+          </div>
+       </div>
+        
+      </section>
+    </main>
+      
+  
+      <footer class="py-5 bg-light">
+        <div class="container border-bottom">
+          <div class="row gx-5">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 col-sm-8 col-10">
+              <div class="div">
+                <a class="fs-2 text-dark" href="home.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> 
+                  Sara's Lunch
+                </a>
+                <p>用心為您準備每一份餐點，快速傳遞新鮮與美味。</p>
+              </div>
+              
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-envelope"></i></a>
+                </li>
+              </ul>
             </div>
-            
-            <ul class="list-unstyled d-flex">
-              <li>
-                <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-facebook"></i></a>
-              </li>
-              <li>
-                <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-instagram"></i></a>
-              </li>
-              <li>
-                <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-twitter"></i></a>
-              </li>
-              <li>
-                <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-3 col-12">
-            <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">會員禮</h4>
-            <ul class="list-unstyled ps-2">
-              <li class="pb-1">
-                <a href="#" class="link-secondary">成為會員</a>
-              </li>
-              <li class="pb-1">
-                <a href="#" class="link-secondary">會員累積計畫</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-3 col-12">
-            <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">挑禮物</h4>
-            <ul class="list-unstyled ps-2">
-              <li class="pb-1">
-                <a href="gift.html" class="link-secondary">餐券禮讚</a>
-              </li>
-              <li class="pb-1">
-                <a href="meals.html" class="link-secondary">線上購物</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-3 col-12">
-            <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">聯絡我們</h4>
-            <ul class="list-unstyled ps-2">
-              <li class="pb-1">
-                <a href="payment.html" class="link-secondary">開始預訂</a>
-              </li>
-              <li class="pb-1">
-                <a href="QA.html" class="link-secondary">常見問題</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-3 col-12">
-            <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">收藏餐廳</h4>
-            <form>
-              <input class="form-control mb-1" type="text" placeholder="Your Email"/>
-              <button class="btn btn-success w-100" type="submit">寄出邀請</button>
-            </form>
+            <div class="col-lg-2 col-md-3 col-12">
+              <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">成為會員</h4>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12">
+              <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">線上購物</h4>
+            </div>
+            <div class="col-lg-2 col-md-3 col-12">
+              <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">常見問題</h4>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+              <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">收藏餐廳</h4>
+              <form>
+                <input class="form-control mb-1" type="text" placeholder="Your Email"/>
+                <button class="btn btn-primary w-100" type="submit">寄出邀請</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="text-center mt-5">
-        <p class="text-muted small m-0">© 2023 Sara's Lunch. All rights reserved.</p>
-      </div>
-    </footer>
-
+        <div class="text-center mt-5">
+          <p class="text-muted small m-0">© 2023 Sara's Lunch. All rights reserved.</p>
+        </div>
+      </footer>
+  
+  </div>
+  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
 </body>
