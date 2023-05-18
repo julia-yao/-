@@ -18,31 +18,7 @@
         body{
          font-family: 'Noto Sans TC', sans-serif;
         }
-        .header{
-          max-height: 600px;
-          background-size: cover;
-          background-position: bottom;
-          position: relative;
-        }
-        .header img{
-            vertical-align: middle;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .header-bg-dark{
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: rgba(0,0,0,.5);           
-        }
-        .banner-txt{
-            position: absolute;
-            font-family:"BernhardScriptW01-Light";
-            font-style: normal;
-        }
+        
     </style>
 </head>
 <body>
@@ -56,25 +32,30 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="home.html">首頁</a>
-                </li>
                 <li class="nav-item mx-2">
                   <a class="nav-link" href="meals.html">菜單</a>
                 </li>
                 <li class="nav-item mx-2">
+                  <a class="nav-link" href="QA.html">常見問題</a>
+                </li>
+                <li class="nav-item mx-2">
                   <a class="nav-link" href="payment.html">聯絡我們</a>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-2 position-relative">
                   <a class="nav-link" href="">
-                    <i class="bi bi-suit-heart fs-4 fw-bolder"></i>
+                    <i class="bi bi-suit-heart fs-3 fw-bolder"></i>
                   </a>
+                  <span class="position-absolute d-flex justify-content-center align-items-center rounded-circle text-white bg-primary h7" style="top: 6px; right: -2px; width: 20px;height: 20px;">
+                    0
+                  </span>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-2 position-relative">
                   <a class="nav-link" href="">
-                    <i class="bi bi-cart fs-4 fw-bolder"></i>
+                    <i class="bi bi-cart fs-3 fw-bolder"></i>
                   </a>
-                  
+                  <span class="position-absolute d-flex justify-content-center align-items-center rounded-circle text-white bg-primary h7" style="top: 6px; right: -2px; width: 20px;height: 20px;">
+                    0
+                  </span>
                 </li>
               </ul>
             </div>
@@ -160,8 +141,8 @@
   
       <footer class="py-5 bg-light">
         <div class="container border-bottom">
-          <div class="row gx-5">
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 col-sm-8 col-10">
+          <div class="row gx-4 d-flex justify-content-around">
+            <div class="col-lg-4 col-md-6">
               <div class="div">
                 <a class="fs-2 text-dark" href="home.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> 
                   Sara's Lunch
@@ -184,16 +165,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-3 col-12">
-              <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">成為會員</h4>
-            </div>
-            <div class="col-lg-2 col-md-3 col-12">
-              <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">線上購物</h4>
-            </div>
-            <div class="col-lg-2 col-md-3 col-12">
-              <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">常見問題</h4>
-            </div>
-            <div class="col-lg-3 col-md-3 col-12">
+            <div class="col-lg-4 col-md-6">
               <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">收藏餐廳</h4>
               <form>
                 <input class="form-control mb-1" type="text" placeholder="Your Email"/>
@@ -203,7 +175,7 @@
           </div>
         </div>
         <div class="text-center mt-5">
-          <p class="text-muted small m-0">© 2023 Sara's Lunch. All rights reserved.</p>
+          <p class="text-muted small m-0">© 2023 Sara's Lunch. 僅為作品練習使用.</p>
         </div>
       </footer>
   

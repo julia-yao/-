@@ -16,12 +16,12 @@
         }
         .card{
           max-width: 300px;
-          height: 300px;
+          max-height: 300px;
           overflow: hidden;
         }
         .card img{
           width: 100%;
-          height: 100%;
+          height: 230px;
           object-fit: cover;
         }
         
@@ -29,49 +29,45 @@
 </head>
 <body>
     
-  <div class="main-navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="header-banner">
+    <nav class="navbar navbar-expand-lg bg-light" id="navbar-top">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;">Sara's Lunch</a>
+          <a class="navbar-brand" href="index.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;">Sara's Lunch</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContentp" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="meals.html">菜單</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="meals.html">餐點</a>
+                <a class="nav-link" href="QA.html">常見問題</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="drinks.html">飲品</a>
+                <a class="nav-link" href="payment.html">聯絡我們</a>
               </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="sweets.html">甜點</a>
+              <li class="nav-item mx-2 position-relative">
+                <a class="nav-link" href="">
+                  <i class="bi bi-suit-heart fs-3 fw-bolder"></i>
+                </a>
+                <span class="position-absolute d-flex justify-content-center align-items-center rounded-circle text-white bg-primary h7" style="top: 6px; right: -2px; width: 20px;height: 20px;">
+                  0
+                </span>
               </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="gift.html">挑禮物</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="payment.html">線上預約</a>
+              <li class="nav-item mx-2 position-relative">
+                <a class="nav-link" href="">
+                  <i class="bi bi-cart fs-3 fw-bolder"></i>
+                </a>
+                <span class="position-absolute d-flex justify-content-center align-items-center rounded-circle text-white bg-primary h7" style="top: 6px; right: -2px; width: 20px;height: 20px;">
+                  0
+                </span>
               </li>
             </ul>
           </div>
         </div>
-    </nav>
- </div>
-    
-  <section class="py-5" style="background-image:url(https://www.crazybackground.com/wp-content/uploads/2019/12/vector-honeycomb-white-background.jpg);">
-    <div class="container">
-        <div>
-            <h4 class="text-center">a lovely morning!</h4>
-            <h2 class="text-center">
-                春天的獻禮
-            </h2>
-        </div>
-    </div>
-  </section>
+      </nav>
+  </div>
 
   <section class="py-3">
     <div class="container">
@@ -88,9 +84,9 @@
           </div>
         </div>
         <div class="col-md-9 d-flex flex-wrap" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-          <div >
-            <div class="row" id="list-item-bs">
-              <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
+          <div class="container m-0">
+            <div class="row" id="">
+              <div class="col-md-6 col-lg-4 mb-2 mb-md-3" id="list-item-bs">
                 <div class="card shadow-sm">
                   <img src="https://sarabethsrestaurants.jp/_img/page/menu/07.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
@@ -207,9 +203,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row" id="list-item-fc">
-              <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
+              <div class="col-md-6 col-lg-4 mb-2 mb-md-3" id="list-item-fc">
                 <div class="card shadow-sm">
                   <img src="https://sarabethsrestaurants.jp/_img/page/menu/03.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
@@ -300,9 +294,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row" id="list-item-ct">
-              <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
+              <div class="col-md-6 col-lg-4 mb-2 mb-md-3" id="list-item-ct">
                 <div class="card shadow-sm">
                   <img src="https://www.doutor.co.jp/product/file/20111201203447.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
@@ -381,19 +373,6 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
-                <div class="card shadow-sm">
-                  <img src="https://www.doutor.co.jp/product/file/20230329112625.jpg" class="" alt="...">
-                  <div class="card-body d-flex justify-content-around align-items-center">
-                    <div class="">
-                      <h5 class="card-text">蜂蜜柚子冰拿鐵</h5>
-                    </div>
-                    <div class="text-success">
-                      NT. <strong class="fs-4">150</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
                 <div class="card shadow-sm" id="list-item-js">
                   <img src="https://www.doutor.co.jp/product/file/20200618185939.jpg" class="" alt="...">
                   <div class="card-body d-flex justify-content-around align-items-center">
@@ -426,6 +405,45 @@
     </div>
   </section>
 
+  <footer class="py-5 bg-light">
+    <div class="container border-bottom">
+      <div class="row gx-4 d-flex justify-content-around">
+        <div class="col-lg-4 col-md-6">
+          <div class="div">
+            <a class="fs-2 text-dark" href="home.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> 
+              Sara's Lunch
+            </a>
+            <p>用心為您準備每一份餐點，快速傳遞新鮮與美味。</p>
+          </div>
+          
+          <ul class="list-unstyled d-flex">
+            <li>
+              <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-twitter"></i></a>
+            </li>
+            <li>
+              <a class="pe-3 link-secondary" href="#"><i class="h4 bi bi-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="text-dark h5 border-start border-3 border-dark ps-2 mb-3">收藏餐廳</h4>
+          <form>
+            <input class="form-control mb-1" type="text" placeholder="Your Email"/>
+            <button class="btn btn-primary w-100" type="submit">寄出邀請</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <p class="text-muted small m-0">© 2023 Sara's Lunch. 僅為作品練習使用.</p>
+    </div>
+  </footer>
   
     
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
