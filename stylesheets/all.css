@@ -12507,7 +12507,7 @@ fieldset:disabled .btn {
 }
 
 .header {
-  max-height: 600px;
+  height: 600px;
   background-size: cover;
   background-position: bottom;
   position: relative;
