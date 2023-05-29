@@ -87,15 +87,18 @@
     let newI = document.createElement("i");
     let hc = document.getElementsByClassName("hovercard");
 
-    newI.className = favi;
-    newFav.className = favbutton;
-    newFav.style.top = 12;
-    newFav.style.right = 12;
-    newFav.appendChild(newI);
-
-    hc.appendChild(newFav);
+    function addfav(){
+      newI.className = favi;
+      newFav.className = favbutton;
+      newFav.style.top = 12;
+      newFav.style.right = 12;
+      newFav.appendChild(newI);
+      hc[1].appendChild(newFav);
+    }
     
-    console.log(hc);
+    addfav();
+    
+    
     
   </script>
 </body>
