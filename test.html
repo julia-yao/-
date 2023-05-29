@@ -20,38 +20,26 @@
         max-width: 300px;
         height: 400px;
         overflow: hidden;
-      }
-      .card :hover{
-        opacity: 0.5;
+        transition: .5s;
       }
       .card img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-      .target-object{
-        width: 100px;
-        height: 100px;
-        border: 1px solid;
-        background-color: gray;
-    }
-    .target-object:hover{
-        box-shadow: 5px 5px 6px 5px rgba(0,0,0,0.5);
-        filter: brightness(0.5);
-    }
-    .target-object{
-            width: 100px;
-            height: 100px;
-            border: 1px solid;
-            
-            transition: box-shadow 1s, background-color 1s,filter 1s;
-        }
+      .hovercard {
+        transition: box-shadow .3s;
+        border: 1px solid #ccc;
+      }
+      .hovercard:hover {
+        box-shadow: 0 0 16px rgba(33,33,33,.5); 
+      }
     </style>
 </head>
 <body>
   <div class="container">
     <div class="col-md-6 col-lg-4 mb-2 mb-md-3" id="list-item-bs">
-      <div class="card shadow-sm shopfav">
+      <div class="card hovercard">
         <button id="favbutton" type="button" class="btn btn-light rounded-circle shadow-lg position-absolute" style="top: 12px; right: 12px;">
           <i  id="favi" class="bi bi-suit-heart fs-4 fw-bolder"></i>
         </button>
@@ -75,7 +63,7 @@
       </div>
     </div>
     <div class="col-md-6 col-lg-4 mb-2 mb-md-3">
-      <div class="card shadow-sm shopfav">
+      <div class="card hovercard">
         <img src="https://sarabethsrestaurants.jp/_img/page/menu/08.jpg" class="" alt="...">
         <div class="card-body d-flex justify-content-around align-items-center">
           <div class="">
@@ -88,7 +76,7 @@
       </div>
     </div>
   </div>
-  <div class="target-object"></div>
+  
   
 
   <script>
@@ -97,7 +85,7 @@
     let favi = document.getElementById("favi").className;
     let newFav = document.createElement("button");
     let newI = document.createElement("i");
-    let shoFav = document.getElementsByClassName("shopfav");
+    let hc = document.getElementsByClassName("hovercard");
 
     newI.className = favi;
     newFav.className = favbutton;
@@ -105,9 +93,9 @@
     newFav.style.right = 12;
     newFav.appendChild(newI);
 
-    shoFav.appendChild(newFav);
+    hc.appendChild(newFav);
     
-    console.log(shoFfav);
+    console.log(hc);
     
   </script>
 </body>
