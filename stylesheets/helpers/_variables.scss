@@ -298,9 +298,9 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $yellow-700 !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
+$primary:       #c7980b !default;//cos
+$secondary:     $gray-500 !default;//cos
+$success:       #57361d !default;//cos
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
@@ -310,7 +310,7 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
+  "primary":    $yellow-700,//cos
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -378,7 +378,8 @@ $spacers: (
   2: $spacer * .5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 4, //cos
+  5: $spacer * 2, //cos
+  6: $spacer * 7, //cos
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -664,7 +665,7 @@ $table-cell-padding-x-sm:     .25rem !default;
 
 $table-cell-vertical-align:   top !default;
 
-$table-color:                 var(--#{$prefix}body-color) !default;
+$table-color:                 #57361d !default;//cos
 $table-bg:                    transparent !default;
 $table-accent-bg:             transparent !default;
 
@@ -1058,7 +1059,7 @@ $zindex-toast:                      1090 !default;
 // scss-docs-start nav-variables
 $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
-$nav-link-font-size:                1rem !default;
+$nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
 $nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
