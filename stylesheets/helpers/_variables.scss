@@ -298,13 +298,13 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       #a78316 !default;//cos
+$primary:       #9e5d02 !default;//cos
 $secondary:     $gray-500 !default;//cos
 $success:       #57361d !default;//cos
-$info:          $cyan !default;
-$warning:       $yellow !default;
+$info:          #8a7261 !default;//cos
+$warning:       $yellow-400 !default;//cos
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #fef9f2 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -377,8 +377,8 @@ $spacers: (
   1: $spacer * .25,
   2: $spacer * .5,
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2, //cos
+  4: $spacer * 2,
+  5: $spacer * 4, //cos
   6: $spacer * 7, //cos
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -407,10 +407,10 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $success !default;
+$link-color:                              $success !default;//cos
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        $success  !default; //shift-color($primary, $link-shade-percentage)
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -1061,16 +1061,16 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-color:                    $success !default; //cos
+$nav-link-hover-color:              $dark !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
-$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-border-color:             $success !default;
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
 $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-active-color:        $success !default;
 $nav-tabs-link-active-bg:           $body-bg !default;
 $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
 
@@ -1467,8 +1467,8 @@ $progress-bar-transition:           width .6s ease !default;
 // List group
 
 // scss-docs-start list-group-variables
-$list-group-color:                  $success !default; //cos
-$list-group-bg:                     $white !default;
+$list-group-color:                  $light !default; //cos
+$list-group-bg:                     $info !default;//cos
 $list-group-border-color:           rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
@@ -1478,9 +1478,9 @@ $list-group-item-padding-x:         $spacer !default;
 $list-group-item-bg-scale:          -80% !default;
 $list-group-item-color-scale:       40% !default;
 
-$list-group-hover-bg:               $gray-100  !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
+$list-group-hover-bg:               $light  !default;//cos
+$list-group-active-color:           $info !default;//cos
+$list-group-active-bg:              $light !default;//cos
 $list-group-active-border-color:    $list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;

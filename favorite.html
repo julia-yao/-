@@ -11,17 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
     <style>
-    .favorite-header{
-    height: 300px;
-    background-size: cover;
-    background-position: bottom;
-    position:relative;
-    }
-    .favorite-img{
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-    }
     </style>
 </head>
 <body>
@@ -44,7 +33,7 @@
                     <a class="nav-link" href="contact.html">聯絡我們</a>
                   </li>
                   <li class="nav-item mx-2 position-relative">
-                    <a class="nav-link" href="favorite.html">
+                    <a class="nav-link active" href="favorite.html">
                       <i class="bi bi-suit-heart fs-3 fw-bolder"></i>
                     </a>
                     <span class="position-absolute d-flex justify-content-center align-items-center rounded-circle text-white bg-primary h7" style="top: 6px; right: -2px; width: 20px;height: 20px;">
@@ -73,7 +62,7 @@
         </header>
     </section>
     
-    <div class="container p-3">
+    <div class="container p-3 mb-3">
         <div class="col mt-2">
             <h2 class="mb-3">願望清單</h2>
             <table class="table table-striped">
@@ -89,7 +78,7 @@
                   <tbody>
                     <tr class="align-middle text-center">
                       <th scope="row">
-                        <img src="https://sarabethsrestaurants.jp/_img/page/menu/07.jpg" class="favorite-img" alt="...">
+                        <img src="https://sarabethsrestaurants.jp/_img/page/menu/07.jpg" class="favorite-img d-none d-md-block mx-auto" alt="...">
                       </th>
                       <td>德國培根早午餐</td>
                       <td>
@@ -117,12 +106,12 @@
         </div>
     </div>
 
-    <footer class="py-5 bg-light">
+    <footer class="py-3 bg-light">
       <div class="container border-bottom">
         <div class="row gx-4 d-flex justify-content-around">
           <div class="col-lg-4 col-md-6">
             <div class="div">
-              <a class="fs-2 text-dark" href="home.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> 
+              <a class="fs-2 text-dark" href="index.html"><img src="https://www.svgrepo.com/show/484441/ring.svg" alt="" style="width: 40px;"> 
                 Sara's Lunch
               </a>
               <p>用心為您準備每一份餐點，快速傳遞新鮮與美味。</p>
@@ -152,7 +141,7 @@
           </div>
         </div>
       </div>
-      <div class="text-center mt-5">
+      <div class="text-center mt-2">
         <p class="text-muted small m-0">© 2023 Sara's Lunch. 僅為作品練習使用.</p>
       </div>
     </footer>
